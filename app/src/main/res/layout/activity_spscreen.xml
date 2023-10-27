@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlayout1"
+        app:layout_constraintTop_toBottomOf="@+id/ceremonyremarks"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <!-- Minus Button -->
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/minus_ic"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Quantity TextView -->
+        <TextView
+            android:id="@+id/quantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_toEndOf="@+id/minusButton"
+            android:layout_centerVertical="true"/>
+
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/add_ic"
+            android:layout_toEndOf="@+id/quantityTextView"
+            android:layout_centerVertical="true"/>
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/videography"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="VideoGraphy"
+            android:layout_toEndOf="@+id/plusButton"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout2"
+        app:layout_constraintTop_toBottomOf="@+id/rlayout1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <!-- Minus Button -->
+        <Button
+            android:id="@+id/photobtnmin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/minus_ic"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Quantity TextView -->
+        <TextView
+            android:id="@+id/quantityTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_toEndOf="@+id/photobtnmin"
+            android:layout_centerVertical="true"/>
+
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/photobtnmax"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/add_ic"
+            android:layout_toEndOf="@+id/quantityTextView2"
+            android:layout_centerVertical="true"/>
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/photograhy"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="PhotoGraphy"
+            android:layout_toEndOf="@+id/photobtnmax"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout3"
+        app:layout_constraintTop_toBottomOf="@+id/rlayout2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <!-- Minus Button -->
+        <Button
+            android:id="@+id/cinemabtnmin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/minus_ic"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Quantity TextView -->
+        <TextView
+            android:id="@+id/quantityTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_toEndOf="@+id/cinemabtnmin"
+            android:layout_centerVertical="true"/>
+
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/cinemabtnmax"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/add_ic"
+            android:layout_toEndOf="@+id/quantityTextView3"
+            android:layout_centerVertical="true"/>
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/cinematography"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="CinematoGraphy"
+            android:layout_toEndOf="@+id/cinemabtnmax"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout4"
+        app:layout_constraintTop_toBottomOf="@+id/rlayout3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <!-- Minus Button -->
+        <Button
+            android:id="@+id/candidbtnmin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/minus_ic"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Quantity TextView -->
+        <TextView
+            android:id="@+id/quantityTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_toEndOf="@+id/candidbtnmin"
+            android:layout_centerVertical="true"/>
+
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/candidbtnmax"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/add_ic"
+            android:layout_toEndOf="@+id/quantityTextView4"
+            android:layout_centerVertical="true"/>
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/candidgraphy"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="Candid Photography"
+            android:layout_toEndOf="@+id/candidbtnmax"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout5"
+        app:layout_constraintTop_toBottomOf="@+id/rlayout4"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <!-- Minus Button -->
+        <Button
+            android:id="@+id/dronebtnmin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/minus_ic"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Quantity TextView -->
+        <TextView
+            android:id="@+id/quantityTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_toEndOf="@+id/dronebtnmin"
+            android:layout_centerVertical="true"/>
+
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/dronebtnmax"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/add_ic"
+            android:layout_toEndOf="@+id/quantityTextView5"
+            android:layout_centerVertical="true"/>
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/drone"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="Drone"
+            android:layout_toEndOf="@+id/dronebtnmax"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout6"
+        app:layout_constraintTop_toBottomOf="@+id/rlayout5"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <!-- Minus Button -->
+        <Button
+            android:id="@+id/boothbtnmin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/minus_ic"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Quantity TextView -->
+        <TextView
+            android:id="@+id/quantityTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_toEndOf="@+id/boothbtnmin"
+            android:layout_centerVertical="true"/>
+
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/boothbtnmax"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/add_ic"
+            android:layout_toEndOf="@+id/quantityTextView6"
+            android:layout_centerVertical="true"/>
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/photobooth"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="PhotoBooth"
+            android:layout_toEndOf="@+id/boothbtnmax"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout7"
+        app:layout_constraintTop_toBottomOf="@+id/rlayout6"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <!-- Minus Button -->
+        <Button
+            android:id="@+id/ledbtnmin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/minus_ic"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Quantity TextView -->
+        <TextView
+            android:id="@+id/quantityTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_toEndOf="@+id/ledbtnmin"
+            android:layout_centerVertical="true"/>
+
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/ledbtnmax"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/add_ic"
+            android:layout_toEndOf="@+id/quantityTextView7"
+            android:layout_centerVertical="true"/>
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/ledScreen"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="LED Screen"
+            android:layout_toEndOf="@+id/ledbtnmax"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:text="Submit"
+        android:layout_marginLeft="120dp"
+        android:background="@color/Goldenrod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rlayout7"/>
+
+</LinearLayout>
